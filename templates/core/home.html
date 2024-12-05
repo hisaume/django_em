@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="jumbotron">
+   <h1 class="display-4">Welcome to My Portfolio</h1>
+   <p class="lead">I'm a software developer passionate about creating amazing web applications.</p>
+   
+   <hr class="my-4">
+
+   <p>Check out my latest projects below.</p>
+
+   <a class="btn btn-primary btn-lg" href="{% url 'projects:project_list' %}" role="button">View Projects</a>
+</div>
+
+{% endblock %}
